@@ -3,9 +3,9 @@
 # weltenwort/ww-dot-shell ellipsis package
 
 # The following hooks can be defined to customize behavior of your package:
-# pkg.install() {
-#     fs.link_files $PKG_PATH
-# }
+pkg.install() {
+    git.clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
+}
 
 # pkg.push() {
 #     git.push
